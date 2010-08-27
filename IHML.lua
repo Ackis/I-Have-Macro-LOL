@@ -162,6 +162,8 @@ local lastMacro
 -- /use [dead]item:46870;item:47006<</code>>
 -- @field m_sharkbait <<code>>#showtooltip item:47036
 -- /use item:47036<</code>>
+-- @field m_mistcaller <<code>>#showtooltip item:47009
+-- /use item:47009<</code>>
 
 --- Default Macros which are included (local specific)
 -- @class table
@@ -208,11 +210,11 @@ local lastMacro
 -- /startattack<</code>>
 -- @field m_halazzi <<code>>/targetexact Corrupted Lightning Totem
 -- /startattack<</code>>
---@field m_kraken <<code>>#showtooltip item:46954
---/target North sea Kraken
---/use item:46954
---/target Kvaldir deepcaller
---/use item:46954<</code>>
+-- @field m_kraken <<code>>#showtooltip item:46954
+-- /target North sea Kraken
+-- /use item:46954
+-- /target Kvaldir deepcaller
+-- /use item:46954<</code>>
 
 -- Default non-localized macros
 local defaultmacrolist = {
@@ -313,6 +315,8 @@ local defaultmacrolist = {
 /equip [nomounted] item:46069 -- Ally]],
 	["m_hrothgar"] = [[#showtooltip [dead]item:46870;item:47006
 /use [dead]item:46870;item:47006]],
+	["m_mistcaller"] = [[#showtooltip item:47009
+/use item:47009]],
 	["m_sharkbait"] = [[#showtooltip item:47036
 /use item:47036]],
 	["m_pvp"] = [[/print "Default macro when opposing faction is targetted."]],
@@ -448,6 +452,7 @@ local defaults = {
 			[L["The Court of Bones"]] = 8,
 			[L["The Sea Reaver's Run"]] = L["m_kraken"],
 			[L["Hrothgar's Landing"]] = defaultmacrolist["m_hrothgar"],
+			[L["Mistcaller's Cave"]] = defaultmacrolist["m_mistcaller"],
 			[L["The Crimson Dawn"]]= defaultmacrolist["m_sharkbait"],
 			[L["The Silver Blade"]]= defaultmacrolist["m_sharkbait"],
 			-- Shozalar Basin
