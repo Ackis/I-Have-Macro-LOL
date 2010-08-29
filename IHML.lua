@@ -45,7 +45,7 @@ local IsInInstance = IsInInstance
 local GetMacroInfo = GetMacroInfo
 local InCombatLockdown = InCombatLockdown
 local GetMacroIconInfo = GetMacroIconInfo
---local GetMinimapZoneText = GetMinimapZoneText
+local GetMinimapZoneText = GetMinimapZoneText
 local GetMacroIndexByName = GetMacroIndexByName
 local UnitFactionGroup = UnitFactionGroup
 local UnitIsPlayer = UnitIsPlayer
@@ -588,8 +588,17 @@ function addon:ZoneChanged()
 
 	local zone = GetSubZoneText()
 
+	if zone == "" then
+		zone = GetMinimapZoneText()
+	end
+
+	--self:Print(zone)
+	--self:Print(c.current)
+	--self:Print(mBody[zone])
+
 	self:SwapMacro(zone)
 
+	-- Load the default macro if we don't have a match
 	if (currentType == "zone") then
 		if ((c.current ~= zone) and (c.current ~= mBody[zone])) then
 			currentType = nil
@@ -601,7 +610,8 @@ function addon:ZoneChanged()
 		currentType = "zone"
 		return
 	end
-	
+-- I don't know why I'm doing this right now but we're going to comment this out and see what breaks
+--[[
 	local zone1 = zone
 
 	zone = GetRealZoneText()
@@ -619,7 +629,7 @@ function addon:ZoneChanged()
 	elseif ((c.current == zone) or (c.current == mBody[zone])) then
 		currentType = "zone"
 	end
-
+--]]
 end
 
 local playerFaction = UnitFactionGroup("player")
