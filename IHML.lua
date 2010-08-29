@@ -164,6 +164,8 @@ local lastMacro
 -- /use item:47036<</code>>
 -- @field m_mistcaller <<code>>#showtooltip item:47009
 -- /use item:47009<</code>>
+-- @field m_borsfury <<code>>#showtooltip item:47029
+-- /use item:47029<</code>>
 
 --- Default Macros which are included (local specific)
 -- @class table
@@ -319,6 +321,8 @@ local defaultmacrolist = {
 /use item:47009]],
 	["m_sharkbait"] = [[#showtooltip item:47036
 /use item:47036]],
+	["m_borsfury"] = [[#showtooltip item:47029
+/use item:47029]],
 	["m_pvp"] = [[/print "Default macro when opposing faction is targetted."]],
 	["default1"] = [[/print "Default macro when no other macro exists and you are in talent spec 1."]], -- Default macro that it'll switch to for spec 1
 	["default2"] = [[/print "Default macro when no other macro exists and you are in talent spec 2."]], -- Default macro that it'll switch to for spec 2
@@ -453,6 +457,7 @@ local defaults = {
 			[L["The Sea Reaver's Run"]] = L["m_kraken"],
 			[L["Hrothgar's Landing"]] = defaultmacrolist["m_hrothgar"],
 			[L["Mistcaller's Cave"]] = defaultmacrolist["m_mistcaller"],
+			[L["Bor's Fury"]] = defaultmacrolist["m_borsfury"],
 			[L["The Crimson Dawn"]]= defaultmacrolist["m_sharkbait"],
 			[L["The Silver Blade"]]= defaultmacrolist["m_sharkbait"],
 			-- Shozalar Basin

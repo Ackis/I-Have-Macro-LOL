@@ -253,3 +253,4 @@ L["Snowblind Hills"] = true
 L["The Crimson Dawn"] = true
 L["The Silver Blade"] = true
 L["Mistcaller's Cave"] = true
+L["Bor's Fury"] = true
