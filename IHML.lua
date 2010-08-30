@@ -1,5 +1,4 @@
 --[[
-
 ************************************************************************
 
 IHML.lua
@@ -11,7 +10,6 @@ Author: Ackis
 Original Author: Snago
 
 ************************************************************************
-
 --]]
 
 --- **IHML** allows you to dynamically switch between macros depending on certain conditions.
@@ -64,6 +62,8 @@ local macroUIHooked, bwLoaded
 local lastboss
 local currentType
 local lastMacro
+-- DBM Patch by Graveeater
+local macroUIHooked, bwLoaded, dbmLoaded
 
 --- Default Macros which are included
 -- @class table
@@ -574,6 +574,9 @@ function addon:OnEnable()
 	if not bwLoaded and BigWigs then
 		self:ADDON_LOADED(nil, "BigWigs") -- BigWigs has already loaded
 	end
+	if not dbmLoaded and DBM then
+		self:ADDON_LOADED(nil, "DBM-Core") -- DBM has already loaded
+	end	
 	if not macroUIHooked and MacroFrame then
 		self:ADDON_LOADED(nil, "Blizzard_MacroUI") -- the MacroUI has already loaded
 	end
@@ -747,6 +750,20 @@ function addon:ADDON_LOADED(event, addonname)
 			end
 		end)
 		bwLoaded = true
+	-- DBM patch by Graveeater
+	elseif addonname == "DBM-Core" then
+		-- DBM Core loaded, we can now hook?
+		addon:Hook(DBM, "NewMod", function (name, modId, modSubTab)
+			lastboss = modId -- I think Name ist the BossName as IHML Expects it
+			addon:SwapMacro(lastboss)
+			-- Copy Paste, not sure what it really does
+			if c.current == lastboss then
+				currentType = "boss"
+			end	
+		end)
+		dbmLoaded = true
+	end
+	if macroUIHooked and bwLoaded and dbmLoaded then
 	end
 
 	if macroUIHooked and bwLoaded then
