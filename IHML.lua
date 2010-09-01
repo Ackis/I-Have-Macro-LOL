@@ -614,7 +614,6 @@ function addon:ZoneChanged()
 		return
 	end
 -- I don't know why I'm doing this right now but we're going to comment this out and see what breaks
---[[
 	local zone1 = zone
 
 	zone = GetRealZoneText()
@@ -632,7 +631,6 @@ function addon:ZoneChanged()
 	elseif ((c.current == zone) or (c.current == mBody[zone])) then
 		currentType = "zone"
 	end
---]]
 end
 
 local playerFaction = UnitFactionGroup("player")
