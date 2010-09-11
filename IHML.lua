@@ -145,8 +145,9 @@ local macroUIHooked, bwLoaded, dbmLoaded
 -- /use item:37568<</code>>
 -- @field m_greattree <<code>>#showtooltip item:45046
 -- /use item:45046<</code>>
--- @field m_chipofulduar <<code>>#showtooltip item:45281
--- /use item:45281<</code>>
+-- @field m_chipofulduar <<code>>#showtooltip item:46893
+-- /use item:45281
+-- /use item:46893<</code>>
 -- @field m_edgeofwinter <<code>>#showtooltip item:45005
 -- /use item:45005<</code>>
 -- @field m_ghostfish <<code>>#showtooltip item:45902
@@ -302,8 +303,9 @@ local defaultmacrolist = {
 /use item:37568]],
 	["m_greattree"] = [[#showtooltip item:45046
 /use item:45046]],
-	["m_chipofulduar"] = [[#showtooltip item:45281
-/use item:45281]],
+	["m_chipofulduar"] = [[#showtooltip item:46893
+/use item:45281
+/use item:46893]],
 	["m_edgeofwinter"] = [[#showtooltip item:45005
 /use item:45005]],
 	["m_ghostfish"] = [[#showtooltip item:45902
@@ -590,15 +592,19 @@ end
 function addon:ZoneChanged()
 
 	local zone = GetSubZoneText()
-
 	if zone == "" then
 		zone = GetMinimapZoneText()
 	end
 
-	--self:Print(zone)
-	--self:Print(c.current)
-	--self:Print(mBody[zone])
-
+--[[
+	self:Print("Real Zone: " .. GetRealZoneText())
+	self:Print("Sub Zone: " .. GetSubZoneText())
+	self:Print("Minimap Zone: " .. GetMinimapZoneText())
+	self:Print("Zone: " .. zone)
+	self:Print(currentType)
+	self:Print(c.current)
+	self:Print(mBody[zone])
+]]--
 	self:SwapMacro(zone)
 
 	-- Load the default macro if we don't have a match
@@ -613,7 +619,7 @@ function addon:ZoneChanged()
 		currentType = "zone"
 		return
 	end
--- I don't know why I'm doing this right now but we're going to comment this out and see what breaks
+
 	local zone1 = zone
 
 	zone = GetRealZoneText()
