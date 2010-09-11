@@ -160,7 +160,9 @@ local macroUIHooked, bwLoaded, dbmLoaded
 -- /equip [nomounted] item:46070 -- Hord
 -- /equip [nomounted] item:46069 -- Ally<</code>>
 -- @field m_hrothgar <<code>>#showtooltip [dead]item:46870;item:47006
--- /use [dead]item:46870;item:47006<</code>>
+-- /use [dead]item:46870;item:47006
+-- /use item:47029
+-- /use item:47009<</code>>
 -- @field m_sharkbait <<code>>#showtooltip item:47036
 -- /use item:47036<</code>>
 -- @field m_mistcaller <<code>>#showtooltip item:47009
@@ -318,7 +320,9 @@ local defaultmacrolist = {
 /equip [nomounted] item:46070 -- Hord
 /equip [nomounted] item:46069 -- Ally]],
 	["m_hrothgar"] = [[#showtooltip [dead]item:46870;item:47006
-/use [dead]item:46870;item:47006]],
+/use [dead]item:46870;item:47006
+/use item:47029
+/use item:47009]],
 	["m_mistcaller"] = [[#showtooltip item:47009
 /use item:47009]],
 	["m_sharkbait"] = [[#showtooltip item:47036
