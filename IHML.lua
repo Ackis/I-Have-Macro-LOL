@@ -624,7 +624,11 @@ function addon:ZoneChanged()
 		return
 	end
 
-	local zone1 = zone
+	if (strfind(c.current, L["Default Macro"]) == nil) then
+		return -- Valid macro found on sub-zone, short circuit further macro selection
+	end
+
+	local zone1 = zone -- WTH is zone1 used for?
 
 	zone = GetRealZoneText()
 	self:SwapMacro(zone)
