@@ -11,7 +11,8 @@
 ## X-Author-Server = Thunderlord US
 ## X-Donate: http://www.wowace.com/projects/ihml/#w_donations
 
-## Interface: 30300
+## Interface: 40000
+## X-Compatible-With: 40000
 ## Version: @project-version@
 ## X-Revision: @project-abbreviated-hash@
 ## X-Date: @file-date-iso@
@@ -20,7 +21,7 @@
 ## X-Category: Questing
 ## X-Localizations: enUS, ruRU, deDE, frFR, zhCN, zhTW
 ## X-Feedback: http://wow.curse.com/downloads/wow-addons/details/ihml.aspx
-## X-Website: http://www.wowwiki.com/IHML/
+## X-Website: http://www.wowpeida.org/IHML/
 
 ## OptionalDeps: Ace3, LibStub, CallbackHandler-1.0, LibAboutPanel, BigWigs
 ## SavedVariables: IHMLDB
