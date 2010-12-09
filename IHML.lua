@@ -169,6 +169,8 @@ local macroUIHooked, bwLoaded, dbmLoaded
 -- /use item:47009<</code>>
 -- @field m_borsfury <<code>>#showtooltip item:47029
 -- /use item:47029<</code>>
+-- @field m_tahretgrounds <<code>>#showtooltip item:63351
+-- /use item:63351<</code>>
 
 --- Default Macros which are included (local specific)
 -- @class table
@@ -329,6 +331,8 @@ local defaultmacrolist = {
 /use item:47036]],
 	["m_borsfury"] = [[#showtooltip item:47029
 /use item:47029]],
+	["m_tahretgrounds"] = [[#showtooltip item:63351
+/use item:63351]],
 	["m_pvp"] = [[/print "Default macro when opposing faction is targetted."]],
 	["default1"] = [[/print "Default macro when no other macro exists and you are in talent spec 1."]], -- Default macro that it'll switch to for spec 1
 	["default2"] = [[/print "Default macro when no other macro exists and you are in talent spec 2."]], -- Default macro that it'll switch to for spec 2
@@ -477,6 +481,10 @@ local defaults = {
 			-- WotLK Instances
 			-- Culling of Stratholme
 			[L["The Culling of Stratholme"]] = defaultmacrolist["m_cos"],
+			-- Cataclysm
+			-- Uldum
+			[L["Tahret Ground"]] = defaultmacrolist["m_tahretgrounds"],
+			-- Default Macros
 			[L["PVP"]] = defaultmacrolist["m_pvp"],
 			[L["Default Macro"]] = defaultmacrolist["default"],
 			[L["Default Macro Spec 1"]] = defaultmacrolist["default1"],
