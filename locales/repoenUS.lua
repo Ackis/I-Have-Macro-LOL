@@ -255,3 +255,4 @@ L["The Silver Blade"] = true
 L["Mistcaller's Cave"] = true
 L["Bor's Fury"] = true
 L["Tahret Ground"] = true
+L["Thunder Ridge"] = true
