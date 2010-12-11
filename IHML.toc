@@ -8,7 +8,7 @@
 ## Author: Ackis
 ## eMail: ackis AT shaw DOT ca
 ## X-Author-Faction = Horde
-## X-Author-Server = Thunderlord US
+## X-Author-Server = Scarlet Crusade US
 ## X-Donate: http://www.wowace.com/projects/ihml/#w_donations
 
 ## Interface: 40000
@@ -23,7 +23,7 @@
 ## X-Feedback: http://wow.curse.com/downloads/wow-addons/details/ihml.aspx
 ## X-Website: http://www.wowpeida.org/IHML/
 
-## OptionalDeps: Ace3, LibStub, CallbackHandler-1.0, LibAboutPanel, BigWigs
+## OptionalDeps: Ace3, LibStub, CallbackHandler-1.0, LibAboutPanel, BigWigs, DBM
 ## SavedVariables: IHMLDB
 
 #@no-lib-strip@
