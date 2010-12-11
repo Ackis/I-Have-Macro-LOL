@@ -489,7 +489,7 @@ local defaults = {
 			-- Org
 			[L["Thunder Ridge"]] = defaultmacrolist["m_thunderridge"],
 			-- Uldum
-			[L["Tahret Ground"]] = defaultmacrolist["m_tahretgrounds"],
+			[L["Tahret Grounds"]] = defaultmacrolist["m_tahretgrounds"],
 			-- Default Macros
 			[L["PVP"]] = defaultmacrolist["m_pvp"],
 			[L["Default Macro"]] = defaultmacrolist["default"],
