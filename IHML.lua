@@ -171,8 +171,10 @@ local macroUIHooked, bwLoaded, dbmLoaded
 -- /use item:47029<</code>>
 -- @field m_tahretgrounds <<code>>#showtooltip item:63351
 -- /use item:63351<</code>>
--- @field m_thunderridge <<codeshowtooltip [dead] item:58955;item:58958
+-- @field m_thunderridge <<code>>#showtooltip [dead] item:58955;item:58958
 -- /use [dead]item:58955,item:58958<</code>>
+-- @field m_paleroost <<code>>#showtooltip item:60266
+-- /use item:60266
 
 --- Default Macros which are included (local specific)
 -- @class table
@@ -337,6 +339,8 @@ local defaultmacrolist = {
 /use item:63351]],
 	["m_thunderridge"] = [[#showtooltip [dead] item:58955;item:58958
 /use [dead]item:58955;item:58958]],
+	["m_paleroost"] = [[#showtooltip item:60266
+/use item:60266]],
 	["m_pvp"] = [[/print "Default macro when opposing faction is targetted."]],
 	["default1"] = [[/print "Default macro when no other macro exists and you are in talent spec 1."]], -- Default macro that it'll switch to for spec 1
 	["default2"] = [[/print "Default macro when no other macro exists and you are in talent spec 2."]], -- Default macro that it'll switch to for spec 2
@@ -488,6 +492,8 @@ local defaults = {
 			-- Cataclysm
 			-- Org
 			[L["Thunder Ridge"]] = defaultmacrolist["m_thunderridge"],
+			-- Deepholme
+			[L["The Pale Roost"]] = defaultmacrolist["m_paleroost"],
 			-- Uldum
 			[L["Tahret Grounds"]] = defaultmacrolist["m_tahretgrounds"],
 			-- Default Macros
