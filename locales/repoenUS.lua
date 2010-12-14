@@ -257,3 +257,4 @@ L["Bor's Fury"] = true
 L["Tahret Grounds"] = true
 L["Thunder Ridge"] = true
 L["The Pale Roost"] = true
+L["Crumbling Depths"] = true
