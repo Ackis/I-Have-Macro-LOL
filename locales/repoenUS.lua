@@ -258,3 +258,4 @@ L["Tahret Grounds"] = true
 L["Thunder Ridge"] = true
 L["The Pale Roost"] = true
 L["Crumbling Depths"] = true
+L["The Restless Front"] = true
