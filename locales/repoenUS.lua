@@ -259,3 +259,7 @@ L["Thunder Ridge"] = true
 L["The Pale Roost"] = true
 L["Crumbling Depths"] = true
 L["The Restless Front"] = true
+L["m_hookhigh"] = [[#showtooltip item:62775
+/tar Thundermar War Gryphon
+/use item:62775]]
+L["Verrall River"] = true

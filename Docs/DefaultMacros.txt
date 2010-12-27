@@ -2,6 +2,8 @@
 
 This is a listing of default macros contained in the addon [[Main | IHML]].  You can also view a listing of macros in the addon by viewing the [[Main | IHML]] [[api | API]] page.
 
+This is outdated.
+
 ==Burning Crusade
 ===Skettis Dailies
 ====Blackwind Lake, Lower Veil Shil'ak, Skettis, Terokk's Rest, Upper Veil Shil'ak, Veil Ala'rak and Veil Harr'ik

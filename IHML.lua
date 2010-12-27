@@ -505,6 +505,8 @@ local defaults = {
 			[L["Crumbling Depths"]] = defaultmacrolist["m_crumblingdepths"],
 			-- Uldum
 			[L["Tahret Grounds"]] = defaultmacrolist["m_tahretgrounds"],
+			-- Twilight Highlands
+			[L["Verrall River"]] = L["m_hookhigh"],
 			-- Tol Barad
 			[L["The Restless Front"]] = defaultmacrolist["m_restlessfront"],
 			-- Default Macros
