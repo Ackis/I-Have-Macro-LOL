@@ -11,6 +11,7 @@
 <Script file="locale-koKR.lua"/>
 <Script file="locale-esES.lua"/>
 <Script file="locale-esMX.lua"/>
+<Script file="locale-ptBR.lua"/>
 <!--@debug@-->
 <Include file="repoenUS.lua"/>
 <!--@end-debug@-->
