@@ -34,8 +34,8 @@
 ## X-Author-Server = Scarlet Crusade US
 ## X-Donate: http://www.wowace.com/projects/ihml/#w_donations
 
-## Interface: 40000
-## X-Compatible-With: 40000
+## Interface: 40200
+## X-Compatible-With: 40200
 ## Version: @project-version@
 ## X-Revision: @project-abbreviated-hash@
 ## X-Date: @file-date-iso@
