@@ -42,7 +42,6 @@ local PickupMacro = PickupMacro
 local IsInInstance = IsInInstance
 local GetMacroInfo = GetMacroInfo
 local InCombatLockdown = InCombatLockdown
-local GetMacroIconInfo = GetMacroIconInfo
 local GetMinimapZoneText = GetMinimapZoneText
 local GetMacroIndexByName = GetMacroIndexByName
 local UnitFactionGroup = UnitFactionGroup
@@ -1224,7 +1223,7 @@ options.args.macros.args = {
 				type = "description",
 				name = L["Last Module"],
 				order = 100,
-				image = function() return GetMacroIconInfo(mBody[guiMacro] and mIcon[guiMacro] or (c.current ~= nil and currentIcon or 1)), 56, 56 end,
+				image = function() return select(2,GetMacroInfo(mBody[guiMacro] and mIcon[guiMacro] or (c.current ~= nil and currentIcon or 1))), 56, 56 end,
 			},
 			name = {
 				type = "input",
