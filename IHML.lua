@@ -551,7 +551,7 @@ local function checkMacro(name, dontMake)
 				for i = m-17, m do 
 					local test = GetMacroInfo(i)
 					if not test then
-						return CreateMacro(name, 1, "", 1, perChar)
+						return CreateMacro(name, 'INV_MISC_QUESTIONMARK', "", 1, perChar)
 					end
 				end
 			end
@@ -1223,7 +1223,7 @@ options.args.macros.args = {
 				type = "description",
 				name = L["Last Module"],
 				order = 100,
-				image = function() return select(2,GetMacroInfo(mBody[guiMacro] and mIcon[guiMacro] or (c.current ~= nil and currentIcon or 1))), 56, 56 end,
+				image = function() return 'INV_MISC_QUESTIONMARK', 56, 56 end,
 			},
 			name = {
 				type = "input",
