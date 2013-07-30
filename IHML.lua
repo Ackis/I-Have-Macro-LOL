@@ -890,7 +890,7 @@ function addon:SwapMacro(new, silent)
 		return
 	end
 
-	EditMacro(index, p.macroname, icon, body, 1, 0)
+	EditMacro(index, p.macroname, 'INV_MISC_QUESTIONMARK', body, 1, 0)
 	c.current = new
 	currentIcon = icon
 	queued = nil
@@ -1223,7 +1223,7 @@ options.args.macros.args = {
 				type = "description",
 				name = L["Last Module"],
 				order = 100,
-				image = function() return 'INV_MISC_QUESTIONMARK', 56, 56 end,
+				image = function() return 'INTERFACE\\ICONS\\INV_MISC_QUESTIONMARK', 56, 56 end,
 			},
 			name = {
 				type = "input",
@@ -1285,7 +1285,7 @@ options.args.macros.args = {
 						currentIcon = tonumber(k)
 						mIcon[c.current] = currentIcon
 						if not InCombatLockdown() then
-							EditMacro(GetMacroIndexByName(p.macroname), p.macroname, currentIcon)
+							EditMacro(GetMacroIndexByName(p.macroname), p.macroname, 'INV_MISC_QUESTIONMARK')
 						end
 					end
 				end,
@@ -1305,7 +1305,7 @@ options.args.macros.args = {
 					else
 						mBody[c.current] = k
 						if not InCombatLockdown() then
-							EditMacro(GetMacroIndexByName(p.macroname), p.macroname, currentIcon, k)
+							EditMacro(GetMacroIndexByName(p.macroname), p.macroname, 'INV_MISC_QUESTIONMARK', k)
 						end
 					end
 				end,
